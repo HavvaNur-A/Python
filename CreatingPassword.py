@@ -1,5 +1,4 @@
 import re
-#characters=["\\?","\\*","\\=","\\%","\\-","\\&","\\$","\\#","\\{","\\}","\\]","\\[","\\<","\\>","\\)","\\(","\\!","\\-","\\.","\\,","\\+","\\^","\\;","\\_"]
 characters=["\\?","\\*","\\!","\\%","\\&","\\=","\\#","\\.","\\;","\\{","\\}","\\_","\\)","\\("]
 birthDay = input("Enter your birthday (in YYYY format): ")
 
@@ -23,12 +22,8 @@ def Control(password):
                 raise Exception("Password must not contain consective numbers!")
     print("Your password is created successfully...")  
 
- 
-
 print("ATTENTİON!\n-Password must be at least 8 characters\n-Password include at least one lowercase letter,uppercase letter,number,special character\n Password-must not include your birtday\n-Password must not contain consective")
-
 while True:
-
         try:
             password=input("Please create your password: ")
             Control(password)
