@@ -4,7 +4,7 @@ import json
 while True:
     sehir=input("Lütfen Hava Durumunu Öğrenmek İstediğiniz Şehri Giriniz:")
     apiKey="ebf38ccf3f71beedd18c9cfba0dc0eeb"
-    adres="https://api.openweathermap.org/data/2.5/weather?q={}&lang=tr&appid={}&units=metric".format(sehir,apiKey)
+    adres="Buraya Veriyi Çekebileceğiniz Bir Adres Ekleyin".format(sehir,apiKey)
     baglan=requests.get(adres)
     sorgu=baglan.json()
  #   print(sorgu)
